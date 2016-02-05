@@ -1,0 +1,33 @@
+engines:
+  rubocop:
+    enabled: true
+  golint:
+    enabled: false
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  coffeelint:
+    enabled: true
+  nodesecurity:
+      enabled: true
+  duplication:
+      enabled: true
+      config:
+        languages:
+        - ruby
+        - javascript
+  bundler-audit:
+      enabled: true
+  brakeman:
+      enabled: true
+ratings:
+  paths:
+  - app/**
+  - lib/**
+  - "**.rb"
+  - "**.go"
+  - Gemfile.lock
+exclude_paths:
+- spec/**/*
+- vendor/**/*
